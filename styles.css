@@ -97,6 +97,14 @@ p { margin: 0 0 8px; }
 #description .latin { color: var(--ink-dim); font-style: italic; margin-bottom: 8px; }
 #description .hint { color: var(--ink-faint); }
 
+/* Кто сделал */
+#credit {
+  flex: 0 0 auto; display: flex; align-items: center; gap: 10px; padding: 10px 0 12px;
+  border-top: 1px solid var(--line); font-size: 12px; color: var(--ink-faint); text-decoration: none;
+}
+#credit img { width: 32px; height: 32px; border-radius: 50%; flex: none; }
+#credit:hover { color: var(--ink-dim); }
+
 /* Транспорт */
 #transport { display: flex; align-items: center; gap: 14px; padding: 10px 16px; font-size: 14px; }
 #transport .tp-play { min-width: 76px; }
