@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "systole",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["serve.py", "8000", "--shots", "/private/tmp/claude-501/-Users-ivansalin-Documents-GitHub-Heart/f96345df-8b00-4d04-b5a5-3bee41d4b209/scratchpad/shots"],
+      "port": 8000
+    }
+  ]
+}

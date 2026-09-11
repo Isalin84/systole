@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Systole — интерактивный атлас работающего сердца</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&display=swap">
+  <link rel="stylesheet" href="styles.css">
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"
+    }
+  }
+  </script>
+</head>
+<body>
+  <div id="app">
+    <aside id="left">
+      <header class="brand"><h1>Systole</h1><p>Атлас работающего сердца</p></header>
+      <section id="scenarios"></section>
+      <section id="controls"></section>
+    </aside>
+    <main id="center">
+      <div id="stage">
+        <canvas id="scene"></canvas>
+        <canvas id="leaders"></canvas>
+        <div id="labels"></div>
+        <div id="dev" hidden></div>
+      </div>
+      <canvas id="wiggers"></canvas>
+    </main>
+    <aside id="right">
+      <section id="index"></section>
+      <section id="description"></section>
+    </aside>
+    <footer id="transport"></footer>
+  </div>
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>
